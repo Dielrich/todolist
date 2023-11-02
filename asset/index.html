@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="../../../02.BOOTSTRAP/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="my-5 text-danger">Tâches à faire</h1>
+
+        <div class="row">
+            <!-- Liste de tâches -->
+            <div class="col-md-8">
+                <h2>Liste de tâches</h2>
+                <table class="table table-striped-columns table-hover" id="Tableau">
+                    <thead>
+                        <tr>
+                            <th width="5%">#</th>						
+                            <th width="60%">Nom</th>
+                            <th width="30%">Date de création</th>
+                            <th width="5%"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="task-list">
+                        <!-- Les tâches seront ajoutées ici en jQuery -->
+                                               
+                    </tbody>
+                </table>
+                
+            </div>
+
+            <div class="col-md-4 ps-0">
+                <h2 class="text-danger">Ajouter une tâche</h2>
+                <form class="ms-1" id="task-form">
+                    <div class="form-floating mb-3">
+                        <input class="form-control col-md-8 mb-3 border rounded-2 focus-ring focus-ring-danger" type="text" name="tache" id="task-name">
+                        <label class="text-danger-emphasis text-center" for="floatingInput">Nom de la tâche</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control col-md-8 mb-3 border rounded-2 focus-ring focus-ring-danger" type="date" name="date" id="task-date">
+                        <label class="text-danger-emphasis mb-2" for="floatingInput">Ajouter une date</label>
+                    </div>
+                    <div class="d-grid gap-2 mb-2">
+                        <button type="submit" id="addTache" class="btn btn-outline-danger my-2">Ajouter la tâche</button>
+                    </div>
+                 </form>
+                 <div class="d-grid gap-2">
+                    <button id="delete-all-tasks" class="btn btn-outline-secondary my-2">Vider cette liste</button>
+                </div>
+    
+                    
+                
+            </div>
+        </div>
+
+
+    </main>
+
+
+<script type="text/javascript" src="../../jquery-3.6.4.js"></script>
+<script type="text/javascript" src="../JS/script.js"></script>
+</body>
+</html>
